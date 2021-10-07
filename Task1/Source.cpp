@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-double Fact(double n)//ôàêòîðèàë ÷èñëà
+double Fact(double n)
 {
 	if (n == 0)
 		return 1;
