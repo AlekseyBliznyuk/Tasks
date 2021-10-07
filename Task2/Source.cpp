@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 int main()
-{
-	setlocale(LC_ALL, "Russian");
+{	
 	int sum = 0;
 	for (int k = 000001; k <= 999999; k++)
 	{
@@ -16,7 +15,7 @@ int main()
 			sum++;
 		}
 	}
-	cout << "—частливых билетов: " << sum << endl;
+	cout << "Happy tickets: " << sum << endl;
 	system("pause");
 	return 0;
 }
