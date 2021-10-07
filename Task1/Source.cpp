@@ -1,23 +1,28 @@
 #include <iostream>
 using namespace std;
 
-double Fact(double n)//факториал числа
+double Fact(double n)//ГґГ ГЄГІГ®Г°ГЁГ Г« Г·ГЁГ±Г«Г 
 {
 	if (n == 0)
 		return 1;
 	return n * Fact(n - 1);
 }
-double fsm_rec(int n)//сумма членов ряда
+double Sum(int n)
 {
-	if (n == 1) return 1;
-	return 1 / Fact(n) + fsm_rec(--n);
+	double sum = 0;
+	for (int i = 0; i < n; i++)
+	{
+		sum = 1 / Fact(n);
+		sum++;
+		return sum;
+	}
 }
 
 int main()
 {
 	int n;
-	cout << "n: "; 
+	cout << "n: ";
 	cin >> n;
-	cout << "Summa: " << fsm_rec(--n);
+	cout << "Summa: " << Sum(n);
 	return 0;
 }
