@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-double Fact(double n)
+double Fact(int n)
 {
 	if (n == 0)
 		return 1;
@@ -9,11 +9,10 @@ double Fact(double n)
 }
 double Sum(int n)
 {
-	double sum = 0;
-	for (int i = 0; i < n; i++)
+	double sum = 1;
+	for (int i = 1; i < n; i++)
 	{
-		sum = 1 / Fact(n);
-		sum++;
+		sum += 1 / Fact(n);
 		return sum;
 	}
 }
